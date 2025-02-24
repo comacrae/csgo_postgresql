@@ -1,0 +1,43 @@
+CREATE TABLE etl.playerstat_source3_extract (
+player_id INTEGER PRIMARY KEY,
+nickname VARCHAR(255),
+real_name VARCHAR(255),
+age INTEGER,
+country VARCHAR(255),
+current_team VARCHAR(255),
+teams TEXT,
+total_kills INTEGER,
+total_deaths INTEGER,
+headshot_percentage VARCHAR(7), -- needs to be converted since it has % sign
+damage_per_round NUMERIC(6,2),
+grenade_dmg_per_round NUMERIC(6,2),
+maps_played INTEGER,
+rounds_played INTEGER,
+kills_per_death NUMERIC(6,2),
+kills_per_round NUMERIC(6,2),
+assists_per_round NUMERIC(6,2),
+deaths_per_round NUMERIC(6,2),
+saved_by_teammate_per_round NUMERIC(6,2),
+saved_teammates_per_round NUMERIC(6,2),
+rounds_with_kills INTEGER,
+kill_to_death_diff VARCHAR(255), --broken col in raw data
+total_opening_kills INTEGER,
+total_opening_deaths INTEGER,
+opening_kill_ratio NUMERIC(4,2),
+opening_kill_rating NUMERIC(4,2),
+team_win_percent_after_first_kill VARCHAR(7), -- needs to be converted since it has % sign
+first_kill_in_won_rounds VARCHAR(7), -- needs to be converted since it has % sign
+zero_kill_rounds INTEGER,
+one_kill_rounds INTEGER,
+two_kill_rounds INTEGER,
+three_kill_rounds INTEGER,
+four_kill_rounds INTEGER,
+five_kill_rounds INTEGER,
+rifle_kills INTEGER,
+sniper_kills INTEGER,
+smg_kills INTEGER,
+pistol_kills INTEGER,
+grenade_kills INTEGER,
+other_kills INTEGER,
+rating NUMERIC(4,2)
+);
