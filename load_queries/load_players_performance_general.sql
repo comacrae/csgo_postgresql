@@ -1,5 +1,5 @@
 select distinct
-player
+player,
 total_kills,
 total_deaths,
 kill_death_ratio,
