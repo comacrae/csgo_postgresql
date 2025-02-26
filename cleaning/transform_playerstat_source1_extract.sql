@@ -10,4 +10,6 @@ WITH trimmed_players as
 	rating
 	FROM etl.playerstat_source1_extract
 )
-select * from trimmed_players
+select * 
+into etl.playerstat_source1_transform
+from trimmed_players

@@ -1,0 +1,75 @@
+select * from information_schema.columns where table_schema='etl' and table_name like 'playerstat_source%_transform' order by table_name
+-- << means column is unique
+--playerstat_source1
+-- "player" 
+-- "country" 
+-- "teams" 
+-- "total_maps" 
+-- "total_rounds" 
+-- "kd_diff" 
+-- "kd" 
+-- "rating" 
+
+--playerstat_source2
+-- "player"
+-- "country"
+-- "teams"
+-- "maps_played"
+-- "rounds_played"
+-- "kd_difference"
+-- "kd_ratio"
+-- "rating"
+-- "total_kills"
+-- "headshot_percentage"
+-- "total_deaths"
+-- "grenade_damage_per_round"
+-- "kills_per_round"
+-- "assists_per_round"
+-- "deaths_per_round" 
+-- "teammate_saved_per_round"
+-- "saved_by_teammate_per_round"
+-- "kast" <<
+-- "impact" <<
+
+--playerstat_source3
+-- "player_id" <<
+-- "nickname"
+-- "real_name" <<
+-- "age" <<
+-- "country"
+-- "current_team" <<
+-- "teams"
+-- "total_kills"
+-- "total_deaths"
+-- "headshot_percentage"
+-- "damage_per_round"
+-- "grenade_dmg_per_round"
+-- "maps_played"
+-- "rounds_played"
+-- "kills_per_death" <<
+-- "kills_per_round"
+-- "assists_per_round"
+-- "deaths_per_round" << 
+-- "saved_by_teammate_per_round"
+-- "saved_teammates_per_round"
+-- ALL COLUMNS BELOW ARE UNIQUE TO SOURCE 3
+-- "rounds_with_kills"
+-- "total_opening_kills"
+-- "total_opening_deaths"
+-- "opening_kill_ratio"
+-- "opening_kill_rating"
+-- "team_win_percent_after_first_kill"
+-- "first_kill_in_won_rounds"
+-- "zero_kill_rounds"
+-- "one_kill_rounds"
+-- "two_kill_rounds"
+-- "three_kill_rounds"
+-- "four_kill_rounds"
+-- "five_kill_rounds"
+-- "rifle_kills"
+-- "sniper_kills"
+-- "smg_kills"
+-- "pistol_kills"
+-- "grenade_kills"
+-- "other_kills"
+-- "rating"

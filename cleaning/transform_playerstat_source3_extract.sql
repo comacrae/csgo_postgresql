@@ -5,7 +5,7 @@ SELECT
 	age,
 	country,
 	current_team,
-	teams,
+	unnest(string_to_array(regexp_replace(teams, '[\s]+', '', 'g'), ',')) AS teams, --replace all isntances of the [, ], ' and space chars, then convert to array and unnest
 	total_kills,
 	total_deaths,
 	CAST(TRIM(headshot_percentage, '%') AS NUMERIC(5,2)) AS headshot_percentage, -- needs to be converted since it has % sign

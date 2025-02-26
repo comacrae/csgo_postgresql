@@ -1,0 +1,10 @@
+select distinct 
+player,
+total_opening_kills,
+total_opening_deaths,
+opening_kill_ratio,
+opening_kill_rating,
+team_win_percent_after_first_kill,
+first_kill_in_won_rounds
+into players.performance_opening
+from players.full_data;

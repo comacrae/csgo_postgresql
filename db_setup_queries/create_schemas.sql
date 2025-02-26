@@ -1,0 +1,3 @@
+CREATE SCHEMA etl;
+CREATE SCHEMA players;
+CREATE SCHEMA teams;
