@@ -1,5 +1,16 @@
 # csgo_postgresql
-A normalized database/ETL pipeline built from CSV files for performance data of professional players/teams playing Counter-Strike: Global Offensive. Also contains interesting queries/views answering questions such as:
+A normalized database/ETL pipeline built from CSV files for performance data of professional players/teams playing Counter-Strike: Global Offensive. Also contains interesting queries/views answering questions including those found below.
+
+To interact with the database, rebuild the .tar file found in the `dump` folder or build a Docker Container:
+
+Run the following commands to build the Postgresql container: 
+
+```
+docker build -t csgo_postgres_img .
+docker run --name csgo_postgres_container -d -p 5432:5432 csgo_postgres_img
+```
+
+# Example queries
 
 ## Is there a correlation between number of teams in a country and overall maps played by a country?
 
@@ -107,12 +118,4 @@ from country_ranking
 | ...          | ...          | ...                         | ...              | ...                   |
 
 
-To interact with the database, rebuild the .tar file found in the `dump` folder or build a Docker Container:
-
-Run the following commands to build the Postgresql container: 
-
-```
-docker build -t csgo_postgres_img .
-docker run --name csgo_postgres_container -d -p 5432:5432 csgo_postgres_img
-```
 
