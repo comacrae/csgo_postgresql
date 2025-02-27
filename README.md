@@ -111,6 +111,8 @@ To interact with the database, rebuild the .tar file found in the `dump` folder 
 
 Run the following commands to build the Postgresql container: 
 
-`docker build -t csgo_postgres_img .`
-`docker run --name csgo_postgres_container -d -p 5432:5432 csgo_postgres_img`
+```
+docker build -t csgo_postgres_img .
+docker run --name csgo_postgres_container -d -p 5432:5432 csgo_postgres_img
+```
 
