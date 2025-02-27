@@ -1,5 +1,5 @@
 # csgo_postgresql
-A database with analytical queries for professional players/teams of the video game Counter-Strike: Global Offensive. Contains interesting queries such as:
+A normalized database/ETL pipeline built from CSV files for performance data of professional players/teams playing Counter-Strike: Global Offensive. Also contains interesting queries/views answering questions such as:
 
 ## Is there a correlation between number of teams in a country and overall maps played by a country?
 
